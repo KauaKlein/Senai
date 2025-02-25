@@ -16,6 +16,7 @@ class Carro extends Veiculo{
     constructor(propriedades){
     super(propriedades)
     this.tipo = 'Carro'
+    this.velocidade = 30
     }
 }
 let propriedadesMoto = {
@@ -38,5 +39,5 @@ const gtr = new Carro(propriedadesCarro)
 gtr.acelerar();
 const moto = new Moto(propriedadesMoto);
 const barco = new Barco(propriedadesBarco);
-// const carro = new Carro(propriedadesCarro);
+
 console.log(moto, barco, gtr );
